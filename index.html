@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikita Chand | E-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- Reset & Body --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf6; /* soft cream */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        /* --- Top Section: Profile --- */
+        .top-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #cdb4db; /* pastel lavender border */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .intro-text {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .intro-text h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #0a2540; /* dark blue */
+            margin-bottom: 10px;
+        }
+
+        .intro-text p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* --- Navigation Buttons --- */
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            justify-items: center;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #cdb4db; /* pastel lavender */
+            color: #333;
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-buttons a:hover {
+            transform: translateY(-5px);
+            background-color: #ffc8dd; /* pastel pink on hover */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        /* --- Footer / Contact --- */
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer a {
+            color: #0a2540;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            .top-section {
+                flex-direction: column;
+            }
+            .intro-text {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my E-Portfolio</h1>
-    <p>This website is under construction.</p>
+
+    <!-- Top Section -->
+    <div class="top-section">
+        <img src="profile.jpg" alt="Nikita Chand" class="profile-pic">
+        <div class="intro-text">
+            <h1>Nikita Chand</h1>
+            <p>B.Tech 2nd Year Student<br>
+            Welcome to my e-portfolio. Here you will find my PESE lab learnings, assignments, certificates, resume, and ways to contact me.</p>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="#learnings">Learnings</a>
+        <a href="#dingding">Ding Ding</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Nikita Chand | <a href="mailto:nikita@example.com">nikita@example.com</a>
+    </footer>
+
 </body>
 </html>
